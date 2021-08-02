@@ -1,0 +1,23 @@
+#main {
+
+}
+#a {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+#main {
+    flex-grow:8;
+    background-color: #999;
+}
+#side {
+    flex-grow:2;
+    background-color: #8ff;
+}
+#widget {
+    margin-bottom: 20px;
+}
+#sticky {
+    position: sticky;
+    top: 20px;
+}
