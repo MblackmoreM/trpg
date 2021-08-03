@@ -4,11 +4,11 @@
     align-items: stretch;
 }
 #main {
-    flex-grow:8;
+    flex-grow:7;
     background-color: #999;
 }
 #side {
-    flex-grow:2;
+    flex-grow:3;
     background-color: #8ff;
 }
 #widget {
