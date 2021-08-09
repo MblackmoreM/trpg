@@ -11,6 +11,7 @@
         <div id="a">
             <div id="main">
                 <h1>回せるシナリオ</h1>
+                <p>▼がついているところはクリックで過去回したときの情報が見れます。</p>
                 <h3>あ</h3>
                 <ul>
                     <li>海からの手</li>
@@ -19,15 +20,24 @@
                 <ul>
                     <li>今日は誕生日</li>
                     <li>
+                        <div onclick="obj=document.getElementById('kakusudake').style; obj.display=(obj.display=='none')?'block':'none';">
+                            <div>
+                                <a style="cursor:pointer;">かくすだけ▼</a>
+                            </div>  
+                            <!-- ここから先を折りたたむ -->
+                            <div id="kakusudake" style="display:none;clear:both;">
+                                <p>半テキセ<br>4PL<br>所要時間1時間</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
                         <div onclick="obj=document.getElementById('sannka').style; obj.display=(obj.display=='none')?'block':'none';">
                             <div>
                                 <a style="cursor:pointer;">胡蝶の運命論▼</a>
-                            </div>
-                            <!--// 折りたたみ展開ボタン -->
-                              
+                            </div>  
                             <!-- ここから先を折りたたむ -->
                             <div id="sannka" style="display:none;clear:both;">
-                                <p>参考までに<br>半テキセ<br>2PL<br>所要時間1時間半</p>
+                                <p>半テキセ<br>2PL<br>所要時間1時間半</p>
                             </div>
                         </div>
                     </li>
