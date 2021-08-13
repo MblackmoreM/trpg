@@ -5,10 +5,12 @@
 }
 #main {
     flex-grow:7;
+    width: 80%;
     background-color: #999;
 }
 #side {
     flex-grow:3;
+    width: 20%;
     background-color: #8ff;
 }
 #widget {
