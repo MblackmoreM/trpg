@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>朝倉裕也</title>
+        <link rel="stylesheet" type="text/css" href="css/saide.css">
+        <link rel="stylesheet" type="text/css" href="css/tansakusya.css">
+    </head>
+    <body>
+        <h1>朝倉裕也</h1>
+        <button id="top_button" onclick="location.href='toppage.html'">トップページ</button>
+        <div id="a">
+            <div id="main">
+                <h3>基本ステータス</h3>
+                <table>
+                    <tr>
+                        <td></td><th>STR</th><th>CON</th><th>POW</th><th>DEX</th><th>APP</th><th>SIZ</th><th>INT</th><th>EDU</th><th>HP</th><th>MP</th><th>SAN</th><th>IDE</th><th>幸運</th><th>知識</th><!--横15-->
+                    </tr>
+                    <tr>
+                        <th>能力値</th><td>9</td><td>10</td><td>9</td><td>12</td><td>13</td><td>12</td><td>12</td><td>17</td><td>11</td><td>12</td><td>60</td><td>60</td><td>60</td><td>85</td>
+                    </tr>
+                    <tr>
+                        <th>増加分</th><td></td><td></td><td>+1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <th>現在値</th><td>9</td><td>10</td><td>13</td><td>12</td><td>13</td><td>12</td><td>12</td><td>17</td><td>11</td><td>12</td><td>60</td><td>60</td><td>60</td><td>85</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="syousai">
+                    <div onclick="obj=document.getElementById('sannka').style; obj.display=(obj.display=='none')?'block':'none';">
+                        <div>
+                            <a style="cursor:pointer;">参加シナリオ▼</a>
+                        </div>
+                        <!--// 折りたたみ展開ボタン -->
+                          
+                        <!-- ここから先を折りたたむ -->
+                        <div id="sannka" style="display:none;clear:both;">
+                            <p>1:</p>
+                        </div>
+                        <!--この部分が折りたたまれ、展開ボタンをクリックすることで展開します。-->   
+                    </div>
+                    <div onclick="obj=document.getElementById('AF').style; obj.display=(obj.display=='none')?'block':'none';">
+                        <div>
+                            <a style="cursor:pointer;">AF▼</a>
+                        </div>  
+                        <!-- ここから先を折りたたむ -->
+                        <div id="AF" style="display:none;clear:both;">
+                            <p>アーティファクト現存</p>
+                            <ul>
+                                <li>AF名<p>説明文</p></li>
+                            </ul>
+                            <p>アーティファクト使用済みもしくは消滅</p>
+                            <ul>
+                                <li>AF名<p>説明文</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div onclick="obj=document.getElementById('ninngennkannkei').style; obj.display=(obj.display=='none')?'block':'none';">
+                        <div>
+                            <a style="cursor:pointer;">人間関係▼</a>
+                        </div>  
+                        <!-- ここから先を折りたたむ -->
+                        <div id="ninngennkannkei" style="display:none;clear:both;">
+                            <p>特筆事項有</p>
+                            <ul>
+                                <li>探索者名<p>関係性</p></li>
+                            </ul>
+                            <p>同卓経験あり</p>
+                            <ul>
+                                <li>PL名<p>探索者名</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="side">
+                <div id="widget"></div>
+                <div id="sticky"><p>サイドバー</p></div>
+            </div>
+        </div>
+    </body>
+</html>
