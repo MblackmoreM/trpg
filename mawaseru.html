@@ -14,7 +14,17 @@
                 <p>▼がついているところはクリックで過去回したときの情報が見れます。<br>ついてないところですか…？このサイトを作り始めるより前に回したもので記録が残ってないですね。</p>
                 <h3>あ</h3>
                 <ul>
-                    <li>海からの手</li>
+                    <li>
+                        <div onclick="obj=document.getElementById('umikaranote').style; obj.display=(obj.display=='none')?'block':'none';">
+                            <div>
+                                <a style="cursor:pointer;">海からの手▼</a>
+                            </div>  
+                            <!-- ここから先を折りたたむ -->
+                            <div id="umikaranote" style="display:none;clear:both;">
+                                <p>半テキセ<br>2PL<br>所要時間2時間</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <h3>か</h3>
                 <ul>
